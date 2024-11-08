@@ -1,0 +1,152 @@
+.racing-sans-one-regular {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-family: "Racing Sans One", sans-serif;
+    background-color: white;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(184, 54, 54);
+    position: sticky; /* Permite que la navbar se quede en la parte superior */
+    top: 0;
+    height: 150px; /* Aumenta la altura de la navbar */
+    display: flex; /* Para alinear los elementos horizontalmente */
+    justify-content: center; /* Centrar los elementos */
+    z-index: 1000; /* Asegura que la navbar esté por encima del contenido */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+li {
+    margin: 0 15px; /* Espaciado entre los elementos */
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: rgb(3, 3, 19);
+    padding: 15px 30px; /* Aumenta el padding para hacer los elementos más grandes */
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease; /* Suaviza las transiciones */
+}
+
+a:hover {
+    background-color: blue;
+    color: white;
+    transform: scale(1.1); /* Escala el enlace al pasar el mouse */
+    animation: zoom 0.5s; /* Añade animación de zoom al pasar el mouse */
+}
+
+.activa {
+    background-color: rgb(217, 217, 25);
+    color: white;
+    animation: fadeIn 0.5s; /* Agrega una animación al estado activo */
+}
+
+.content {
+    padding-top: 80px; /* Ajuste para mantener el contenido separado de la navbar */
+}
+
+/* Excluir la lista decimal con ml-6 de los estilos de la navbar */
+.list-decimal.ml-6 {
+    list-style-type: decimal;
+    margin-left: 1.5rem; /* Mantener el estilo de márgenes */
+}
+
+/* Agregar scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+.sidebar-green {
+    background-color: #28a745; /* Color verde */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados para un mejor estilo */
+    animation: slideIn 0.5s; /* Animación de entrada */
+}
+
+.sidebar-lightgreen {
+    background-color: #82c91e; /* Color verde claro */
+    padding: 15px;
+    border-radius: 8px;
+    animation: slideIn 0.5s; /* Animación de entrada */
+}
+
+.sidebar-yellow {
+    background-color: #f9c74f; /* Color amarillo */
+    padding: 15px;
+    border-radius: 8px;
+    animation: slideIn 0.5s; /* Animación de entrada */
+}
+
+.text-white {
+    color: white;
+}
+
+img {
+    margin: 0 auto; /* Center images only if they're block elements */
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: bounce 1s infinite; /* Animación de rebote */
+}
+
+a {
+    display: inline-block; /* Makes anchor tags behave like block elements for proper padding */
+}
+
+/* Animaciones CSS */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Nueva animación zoom */
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
